@@ -1,0 +1,357 @@
+Wed May  6 20:06:05 UTC 2020
+Actual output starts here:
+Source PDY script to export PDYm7, ..., PDY, ..., PDYp7 variables.
+_=*121199*/usr/bin/env
+BASH_FUNC_module()=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+BASH_FUNC_ml()=() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+ADVISOR_2018_DIR=/usrx/local/prod/intel/2018UP04/advisor_2018
+BASH_ENV=/usrx/local/prod/lmod/lmod/init/bash
+CLASSPATH=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/lib64/mpi.jar:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/lib/daal.jar
+CLCK_ROOT=/usrx/local/prod/intel/2018UP04/clck_latest
+CNVGRIB=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/cnvgrib
+COMDATEROOT=/gpfs/dell1/nco/ops/com
+COMIN=/gpfs/dell2/ptmp/Alicia.Bentley/verf.dat/precip
+COMIN1=/gpfs/dell2/ptmp/Alicia.Bentley/verf.dat/precip
+COMIN2=/gpfs/dell1/nco/ops/com/verf/prod/precip
+COMINpcpanl=/gpfs/dell2/nco/ops/com/pcpanl/prod
+COMLISTROOT=/gpfs/dell1/nco/ops/config
+COMLOGSROOT=/gpfs/dell1/nco/ops/com
+COMOUT=/gpfs/dell2/ptmp/Alicia.Bentley/verf.dat/precip
+COMROOT=/gpfs/dell1/nco/ops/com
+COMROOThps=/gpfs/hps/nco/ops/com
+COMROOTp1=/gpfs/gp1/nco/ops/com
+COMROOTp2=/gpfs/gp2/nco/ops/com
+COMROOTp3=/gpfs/dell1/nco/ops/com
+COPYGB=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/copygb
+COPYGB2=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/copygb2
+CPATH=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/ipp/include:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/include:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/pstl/include:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/include:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/include
+CPLUS_INCLUDE_PATH=/usrx/local/prod/intel/2018UP04/clck_latest/include
+CVS_RSH=ssh
+DAALROOT=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal
+DATA=/gpfs/dell2/stmp/Alicia.Bentley/tmpnwprd/verf_precip_getppt.121199
+DATAROOT=/gpfs/dell2/stmp/Alicia.Bentley/tmpnwprd
+DATAverf_precip=/gpfs/dell2/ptmp/Alicia.Bentley/verf.dat
+DCOMROOT=/gpfs/dell1/nco/ops/dcom
+DEGRIB2=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/degrib2
+DISPLAY=localhost:20.0
+EXECverf_precip=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip/exec
+FIXverf_precip=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip/fix
+FSYNC=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/exec/ips/fsync_file
+GDBSERVER_MIC=/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/targets/intel64/x200/bin/gdbserver
+GDB_CROSS=/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/intel64/bin/gdb-ia
+GESROOT=/gpfs/dell1/nco/ops/nwges
+GESROOThps=/gpfs/hps/nco/ops/nwges
+GESROOTp1=/gpfs/gp1/nco/ops/nwges
+GESROOTp2=/gpfs/gp2/nco/ops/nwges
+GESROOTp3=/gpfs/dell1/nco/ops/nwges
+GIT_SSH=/u/Alicia.Bentley/ssh-mine
+GRB2INDEX=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/grb2index
+GRBINDEX=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/grbindex
+GRIB2GRIB=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/grib2grib
+GRIB_DEFINITION_PATH=/gpfs/dell2/emc/modeling/noscrub/Benjamin.Blake/EXT/grib_api.1.14.4/share/grib_api/definitions
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HOME=/u/Alicia.Bentley
+HOMEverf_precip=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip
+HOSTNAME=v71a3
+INFOPATH=/usrx/local/prod/intel/2018UP04/documentation_2018/en/debugger/gdb-ia/info:info_gdb_igfx
+INSPECTOR_2018_DIR=/usrx/local/prod/intel/2018UP04/inspector_2018
+INTEL_LICENSE_FILE=/usrx/local/prod/intel/licenses
+INTEL_PYTHONHOME=/usrx/local/prod/intel/2018UP04/debugger_2018/python/intel64
+IPPROOT=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/ipp
+I_MPI_HYDRA_IFACE=ib0
+I_MPI_ROOT=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi
+LANG=en_US.UTF-8
+LD_LIBRARY_PATH=/usrx/local/prod/intel/2018UP04/itac_latest/slib:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/lib64:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/ipp/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.7:/usrx/local/prod/intel/2018UP04/debugger_2018/iga/lib:/usrx/local/prod/intel/2018UP04/debugger_2018/libipt/intel64/lib:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.4
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LIBRARY_PATH=/usrx/local/prod/intel/2018UP04/clck_latest/lib/intel64:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/ipp/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.7:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/lib/intel64_lin:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.4
+LMOD_CMD=/usrx/local/prod/lmod/lmod/libexec/lmod
+LMOD_DIR=/usrx/local/prod/lmod/lmod/libexec
+LMOD_FAMILY_COMPILER=ips
+LMOD_FAMILY_COMPILER_VERSION=18.0.5.274
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_PKG=/usrx/local/prod/lmod/lmod
+LMOD_SETTARG_CMD=:
+LMOD_VERSION=7.7
+LMOD_sys=Linux
+LOADEDMODULES=ips/18.0.5.274:prod_util/1.1.3:prod_envir/1.0.3:grib_util/1.1.1
+LOGNAME=Alicia.Bentley
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+LS_OPTIONS=--color=auto
+MAIL=/var/spool/mail/Alicia.Bentley
+MANPATH=/usrx/local/prod/intel/2018UP04/itac_latest/man:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/man/common:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/man:/usrx/local/prod/intel/2018UP04/documentation_2018/en/debugger/gdb-ia/man:/usrx/local/prod/intel/2018UP04/documentation_2018/en/debugger/gdb-igfx/man:/usrx/local/prod/lmod/lmod/share/man::/usrx/local/prod/intel/2018UP04/inspector_2018/man:/usrx/local/prod/intel/2018UP04/advisor_2018/man
+MDATE=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/exec/ips/mdate
+MKLROOT=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl
+MODULEPATH=/gpfs/dell3/usrx/local/dev/emc_rocoto/modulefiles:/usrx/local/prod/lmod/lmod/modulefiles/Core:/usrx/local/prod/modulefiles/core_third:/usrx/local/prod/modulefiles/defs:/gpfs/dell1/nco/ops/nwprod/modulefiles/core_prod:/usrx/local/dev/modulefiles:/u/Benjamin.Blake/modulefiles:/usrx/local/prod/modulefiles/compiler_third/ips/18.0.1:/gpfs/dell1/nco/ops/nwprod/modulefiles/compiler_prod/ips/18.0.1:/usrx/local/prod/modulefiles/compiler_mpi/ips/18.0.1
+MODULEPATH_ROOT=/usrx/local/prod/modulefiles
+MODULESHOME=/usrx/local/prod/lmod/lmod
+MPM_LAUNCHER=/usrx/local/prod/intel/2018UP04/debugger_2018/mpm/mic/bin/start_mpm.sh
+NDATE=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/exec/ips/ndate
+NET=verf
+NHOUR=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/exec/ips/nhour
+NLSPATH=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/lib/intel64_lin/locale/%l_%t/%N:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/lib/intel64_lin/locale/%l_%t/%N::/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/intel64/share/locale/%l_%t/%N
+NWROOT=/gpfs/dell1/nco/ops/nwprod
+NWROOThps=/gpfs/hps/nco/ops/nwprod
+NWROOTp1=/gpfs/gp1/nco/ops/nwprod
+NWROOTp2=/gpfs/gp2/nco/ops/nwprod
+NWROOTp3=/gpfs/dell1/nco/ops/nwprod
+PARMverf_precip=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip/parm
+PATH=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/ush:/usrx/local/prod/intel/2018UP04/advisor_2018/bin64:/usrx/local/prod/intel/2018UP04/vtune_amplifier_2018/bin64:/usrx/local/prod/intel/2018UP04/inspector_2018/bin64:/usrx/local/prod/intel/2018UP04/itac_latest/bin:/usrx/local/prod/intel/2018UP04/clck_latest/bin/intel64:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/bin/intel64:/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/bin64:/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/targets/intel64/x200/bin:/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/intel64/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/opt/ibutils/bin:/opt/dell/srvadmin/bin:.:/u/Alicia.Bentley/bin:/sbin:/u/Alicia.Bentley/.local/bin
+PDY=20200506
+PDYm1=20200505
+PDYm2=20200504
+PDYm3=20200503
+PDYm4=20200502
+PDYm5=20200501
+PDYm6=20200430
+PDYm7=20200429
+PDYp1=20200507
+PDYp2=20200508
+PDYp3=20200509
+PDYp4=20200510
+PDYp5=20200511
+PDYp6=20200512
+PDYp7=20200513
+PKG_CONFIG_PATH=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/bin/pkgconfig
+PS4=$SECONDS + 
+PSTLROOT=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/pstl
+PWD=/gpfs/dell2/stmp/Alicia.Bentley/tmpnwprd/verf_precip_getppt.121199
+PYTHONPATH=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/ush:/usrx/local/prod/intel/2018UP04/advisor_2018/pythonapi
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+QT_GRAPHICSSYSTEM_CHECKED=1
+RUN=precip
+RUN_ENVIR=dev
+SENDCOM=YES
+SENDDBN=NO
+SENDECF=YES
+SENDRZDM=YES
+SENDSMS=NO
+SHELL=/bin/bash
+SHLVL=3
+SSH_CLIENT=192.58.2.81 39190 22
+SSH_CONNECTION=192.58.2.81 39190 192.58.152.13 22
+SSH_TTY=/dev/pts/16
+TBBROOT=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb
+TERM=xterm-256color
+TOCGRIB=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/tocgrib
+TOCGRIB2=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/tocgrib2
+TOCGRIB2SUPER=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/tocgrib2super
+USER=Alicia.Bentley
+USHverf_precip=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip/ush
+UTILROOT=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3
+UTLDEVverf_precip=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip/util.dev
+VT_ADD_LIBS=-ldwarf -lelf -lvtunwind -lm -lpthread
+VT_ARCH=intel64
+VT_LIB_DIR=/usrx/local/prod/intel/2018UP04/itac_latest/lib
+VT_MPI=impi4
+VT_ROOT=/usrx/local/prod/intel/2018UP04/itac_latest
+VT_SLIB_DIR=/usrx/local/prod/intel/2018UP04/itac_latest/slib
+WGRIB=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/wgrib
+WGRIB2=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec/wgrib2
+WGRIBpath=/gpfs/dell1/nco/ops/nwprod/grib_util.v1.1.1/exec
+XDG_RUNTIME_DIR=/run/user/21074
+XDG_SESSION_ID=297340
+_AST_FEATURES=UNIVERSE - ucb
+_LMFILES_=/usrx/local/prod/modulefiles/core_third/ips/18.0.5.274:/gpfs/dell1/nco/ops/nwprod/modulefiles/compiler_prod/ips/18.0.1/prod_util/1.1.3:/gpfs/dell1/nco/ops/nwprod/modulefiles/core_prod/prod_envir/1.0.3:/gpfs/dell1/nco/ops/nwprod/modulefiles/compiler_prod/ips/18.0.1/grib_util/1.1.1
+_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImlwcyIsfSxtVD17Z3JpYl91dGlsPXtbImZuIl09Ii9ncGZzL2RlbGwxL25jby9vcHMvbndwcm9kL21vZHVsZWZpbGVzL2NvbXBpbGVyX3Byb2QvaXBzLzE4LjAuMS9ncmliX3V0aWwvMS4xLjEiLFsiZnVsbE5hbWUiXT0iZ3JpYl91dGlsLzEuMS4xIixbImxvYWRPcmRlciJdPTQscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iZ3JpYl91dGlsLzEuMS4xIix9LGlwcz17WyJmbiJdPSIvdXNyeC9sb2NhbC9wcm9kL21vZHVsZWZp
+_ModuleTable002_=bGVzL2NvcmVfdGhpcmQvaXBzLzE4LjAuNS4yNzQiLFsiZnVsbE5hbWUiXT0iaXBzLzE4LjAuNS4yNzQiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJpcHMvMTguMC41LjI3NCIsfSxwcm9kX2VudmlyPXtbImZuIl09Ii9ncGZzL2RlbGwxL25jby9vcHMvbndwcm9kL21vZHVsZWZpbGVzL2NvcmVfcHJvZC9wcm9kX2VudmlyLzEuMC4zIixbImZ1bGxOYW1lIl09InByb2RfZW52aXIvMS4wLjMiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJwcm9kX2VudmlyLzEuMC4zIix9LHByb2RfdXRpbD17WyJm
+_ModuleTable003_=biJdPSIvZ3Bmcy9kZWxsMS9uY28vb3BzL253cHJvZC9tb2R1bGVmaWxlcy9jb21waWxlcl9wcm9kL2lwcy8xOC4wLjEvcHJvZF91dGlsLzEuMS4zIixbImZ1bGxOYW1lIl09InByb2RfdXRpbC8xLjEuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InByb2RfdXRpbC8xLjEuMyIsfSx9LG1wYXRoQT17Ii9ncGZzL2RlbGwzL3VzcngvbG9jYWwvZGV2L2VtY19yb2NvdG8vbW9kdWxlZmlsZXMiLCIvdXNyeC9sb2NhbC9wcm9kL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL3VzcngvbG9jYWwvcHJvZC9tb2R1bGVmaWxlcy9jb3JlX3RoaXJkIiwiL3VzcngvbG9jYWwvcHJvZC9tb2R1
+_ModuleTable004_=bGVmaWxlcy9kZWZzIiwiL2dwZnMvZGVsbDEvbmNvL29wcy9ud3Byb2QvbW9kdWxlZmlsZXMvY29yZV9wcm9kIiwiL3VzcngvbG9jYWwvZGV2L21vZHVsZWZpbGVzIiwiL3UvQmVuamFtaW4uQmxha2UvbW9kdWxlZmlsZXMiLCIvdXNyeC9sb2NhbC9wcm9kL21vZHVsZWZpbGVzL2NvbXBpbGVyX3RoaXJkL2lwcy8xOC4wLjEiLCIvZ3Bmcy9kZWxsMS9uY28vb3BzL253cHJvZC9tb2R1bGVmaWxlcy9jb21waWxlcl9wcm9kL2lwcy8xOC4wLjEiLCIvdXNyeC9sb2NhbC9wcm9kL21vZHVsZWZpbGVzL2NvbXBpbGVyX21waS9pcHMvMTguMC4xIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3J4L2xvY2FsL3Byb2QvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L3VzcngvbG9jYWwv
+_ModuleTable005_=cHJvZC9tb2R1bGVmaWxlcy9jb3JlX3RoaXJkOi91c3J4L2xvY2FsL3Byb2QvbW9kdWxlZmlsZXMvZGVmczovZ3Bmcy9kZWxsMS9uY28vb3BzL253cHJvZC9tb2R1bGVmaWxlcy9jb3JlX3Byb2QiLH0=
+_ModuleTable_Sz_=5
+__LMOD_REF_COUNT_CLASSPATH=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/lib64/mpi.jar:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/lib/daal.jar:1
+__LMOD_REF_COUNT_CPATH=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/ipp/include:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/include:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/pstl/include:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/include:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/include:1
+__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/usrx/local/prod/intel/2018UP04/clck_latest/include:1
+__LMOD_REF_COUNT_INFOPATH=/usrx/local/prod/intel/2018UP04/documentation_2018/en/debugger/gdb-ia/info:1;info_gdb_igfx:1
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usrx/local/prod/intel/2018UP04/itac_latest/slib:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/lib64:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/ipp/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.7:1;/usrx/local/prod/intel/2018UP04/debugger_2018/iga/lib:1;/usrx/local/prod/intel/2018UP04/debugger_2018/libipt/intel64/lib:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.4:1
+__LMOD_REF_COUNT_LIBRARY_PATH=/usrx/local/prod/intel/2018UP04/clck_latest/lib/intel64:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/ipp/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.7:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/daal/lib/intel64_lin:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/tbb/lib/intel64_lin/gcc4.4:1
+__LMOD_REF_COUNT_LOADEDMODULES=ips/18.0.5.274:1;prod_util/1.1.3:1;prod_envir/1.0.3:1;grib_util/1.1.1:1
+__LMOD_REF_COUNT_MANPATH=/usrx/local/prod/intel/2018UP04/itac_latest/man:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/man/common:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/man:1;/usrx/local/prod/intel/2018UP04/documentation_2018/en/debugger/gdb-ia/man:1;/usrx/local/prod/intel/2018UP04/documentation_2018/en/debugger/gdb-igfx/man:1;/usrx/local/prod/lmod/lmod/share/man:1;/usrx/local/prod/intel/2018UP04/inspector_2018/man:1;/usrx/local/prod/intel/2018UP04/advisor_2018/man:1
+__LMOD_REF_COUNT_NLSPATH=/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/lib/intel64_lin/locale/%l_%t/%N:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mkl/lib/intel64_lin/locale/%l_%t/%N:1;/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/intel64/share/locale/%l_%t/%N:1
+__LMOD_REF_COUNT_PATH=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/ush:1;/usrx/local/prod/intel/2018UP04/advisor_2018/bin64:1;/usrx/local/prod/intel/2018UP04/vtune_amplifier_2018/bin64:1;/usrx/local/prod/intel/2018UP04/inspector_2018/bin64:1;/usrx/local/prod/intel/2018UP04/itac_latest/bin:1;/usrx/local/prod/intel/2018UP04/clck_latest/bin/intel64:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/bin/intel64:1;/usrx/local/prod/intel/2018UP04/compilers_and_libraries/linux/mpi/bin64:1;/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/targets/intel64/x200/bin:1;/usrx/local/prod/intel/2018UP04/debugger_2018/gdb/intel64/bin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:3;/usr/lpp/mmfs/bin:1;/opt/ibutils/bin:1;/opt/dell/srvadmin/bin:1;.:2;/u/Alicia.Bentley/bin:3;/sbin:2;/u/Alicia.Bentley/.local/bin:1
+__LMOD_REF_COUNT_PYTHONPATH=/gpfs/dell1/nco/ops/nwprod/prod_util.v1.1.3/ush:1;/usrx/local/prod/intel/2018UP04/advisor_2018/pythonapi:1
+__LMOD_REF_COUNT__LMFILES_=/usrx/local/prod/modulefiles/core_third/ips/18.0.5.274:1;/gpfs/dell1/nco/ops/nwprod/modulefiles/compiler_prod/ips/18.0.1/prod_util/1.1.3:1;/gpfs/dell1/nco/ops/nwprod/modulefiles/core_prod/prod_envir/1.0.3:1;/gpfs/dell1/nco/ops/nwprod/modulefiles/compiler_prod/ips/18.0.1/grib_util/1.1.1:1
+bsubnext=Y
+cronmode=Y
+cyc=00
+cycle=t00z
+debug=N
+envir=dev
+jlogfile=/gpfs/dell2/stmp/Alicia.Bentley/tmpnwprd/verf_precip_getppt.121199/jlogfile
+job=verf_precip_getppt
+jobid=LLverf_precip_getppt.o121199
+machine=wcoss
+outid=LLverf_precip_getppt
+pgmout=OUTPUT.121199
+pid=121199
+retro=N
+vday=20200505
+version=v4.3.2
+A__z="*SHLVL
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+It's a comment line, skip this line
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+do not use fhr1 when using wgrib2 to extract precip record.
+gridconv= no
+**************verf_precip_getppt COMPLETED NORMALLY on Wed May  6 20:06:32 UTC 2020
+HAS COMPLETED NORMALLY!
+Wed May  6 20:06:32 UTC 2020
