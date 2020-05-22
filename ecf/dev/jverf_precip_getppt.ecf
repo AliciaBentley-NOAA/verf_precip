@@ -68,7 +68,7 @@ if [ "$RUN_ENVIR" = dev ]; then        ### for dev
 # ------------------------------------------------------
 # Most frequently made changes: 
   export HOMEverf_precip=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip
-  export PARMverf_precip=$HOMEverf_precip/parm
+  export PARMverf_precip=$HOMEverf_precip/parm.dev
   export DATAverf_precip=/gpfs/dell2/ptmp/$LOGNAME/verf.dat
   export bsubnext=Y   # bsub verfgen24 and verfgen03?  
 # ------------------------------------------------------

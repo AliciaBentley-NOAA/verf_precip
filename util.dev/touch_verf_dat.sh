@@ -25,7 +25,7 @@ COMVSDB=/gpfs/dell2/ptmp/$LOGNAME/verf.dat/vsdb
 daytouch=`date -d "$day - 14 days" +%Y%m%d`
 daym3=`date -d "$day - 3 days" +%Y%m%d`
 
-parmdir=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip/parm
+parmdir=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley/verf_precip/parm.dev
 # find out which models are being verified in FSS06H:
 models=`grep '=1' $parmdir/verf_precip_fss_06h_config | sed 's/export run_//g' | sed 's/=1//g'`
 # Add the non-FSS06H models whose files also need to be kept on line:

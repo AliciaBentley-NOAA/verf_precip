@@ -71,7 +71,7 @@ if [ "$RUN_ENVIR" = dev ]; then        ### for dev
 # Most frequently made changes: 
   export NOSCRUB=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley
   export HOMEverf_precip=$NOSCRUB/verf_precip
-  export PARMverf_precip=$HOMEverf_precip/parm
+  export PARMverf_precip=$HOMEverf_precip/parm.dev
   export DATAverf_precip=/gpfs/dell2/ptmp/$LOGNAME/verf.dat
 #
   export bsubnext=Y   # bsub the transfer to RZDM,if other conditions are met? 
@@ -80,8 +80,8 @@ if [ "$RUN_ENVIR" = dev ]; then        ### for dev
   # Location of the RZDM directory:
   export RZDMDIR=/home/people/emc/www/htdocs/users/verification/precip/verif/daily
   # Use prod data for plot? # NO if testing package submitted for implementation
-  export USEPRD4PLT=NO
-#  export USEPRD4PLT=YES
+#  export USEPRD4PLT=NO
+  export USEPRD4PLT=YES
 # ------------------------------------------------------
   # DATAROOT is NCO-speak for 'wrkdir'.
   export DATAROOT=/gpfs/dell2/stmp/$LOGNAME/tmpnwprd

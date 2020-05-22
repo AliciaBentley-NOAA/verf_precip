@@ -63,7 +63,7 @@ if [ "$RUN_ENVIR" = dev ]; then        ### for dev
   export COMCCPA=`compath.py ccpa/prod`/ccpa
   export NOSCRUB=/gpfs/dell2/emc/verification/noscrub/Alicia.Bentley
   export HOMEverf_precip=$NOSCRUB/verf_precip
-  export PARMverf_precip=$HOMEverf_precip/parm
+  export PARMverf_precip=$HOMEverf_precip/parm.dev
   export DATAverf_precip=/gpfs/dell2/ptmp/$LOGNAME/verf.dat
   export COMVSDB=$DATAverf_precip/vsdb
 # ------------------------------------------------------
