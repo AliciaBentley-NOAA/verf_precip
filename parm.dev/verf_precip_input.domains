@@ -66,6 +66,8 @@ gfsv14|convert    |PRATE|000|/gpfs/hps/nco/ops/com/gfs/para/gfs._DAY_/gfs.t%{cyc
 gfsv14ext|convert |PRATE|000|/gpfs/hps/nco/ops/com/gfs/para/gfs._DAY_/gfs.t%{cyc}%z.sfluxgrbf%{fhr}%.grib2|_DAY_/gfsv14_|00 06 12 18|90|180|06|888|grb2
 fv3gfs3h|      |   |000|/gpfs/dell1/nco/ops/com/gfs/para/gfs._DAY_/%{cyc}%/gfs.t%{cyc}%z.pgrb2.0p25.f%{fhr}%|_DAY_/fv3gfs_|00 06 12 18|03|180|03|03|grb2
 fv3gfs6h|      |   |000|/gpfs/dell1/nco/ops/com/gfs/para/gfs._DAY_/%{cyc}%/gfs.t%{cyc}%z.pgrb2.0p25.f%{fhr}%|_DAY_/fv3gfs_|00 06 12 18|03|180|03|06|grb2
+gfsv163h|      |   |000|/gpfs/dell3/ptmp/emc.glopara/ROTDIRS/v16rt2/gfs._DAY_/%{cyc}%/gfs.t%{cyc}%z.pgrb2.0p25.f%{fhr}%|_DAY_/gfs_|00 06 12 18|03|180|03|03|grb2
+gfsv166h|      |   |000|/gpfs/dell3/ptmp/emc.glopara/ROTDIRS/v16rt2/gfs._DAY_/%{cyc}%/gfs.t%{cyc}%z.pgrb2.0p25.f%{fhr}%|_DAY_/gfs_|00 06 12 18|03|180|03|06|grb2
 wgnegfs|      |   |000|/gpfs/dell1/nco/ops/com/gfs/para/gfs._DAY_/%{cyc}%/gfs.t%{cyc}%z.pgrb2.0p25.f%{fhr}%|_DAY_/wgnegfs_|00 06 12 18|03|180|03|999|grb2
 fv3sarda|      |   |000|/gpfs/hps2/ptmp/emc.campara/fv3sarda/fv3sarda._DAY_/%{cyc}%/fv3sar.t%{cyc}%z.conus.f%{fhr}%.grib2|_DAY_/fv3sarda_|00 12|01|60|01|01|grb2
 fv3sar|      |   |000|/gpfs/hps/ptmp/emc.campara/fv3sar/fv3sar._DAY_/%{cyc}%/fv3sar.t%{cyc}%z.conus.f%{fhr}%.grib2|_DAY_/fv3sar_|00 12|01|60|01|01|grb2
